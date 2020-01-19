@@ -1,8 +1,8 @@
 Summary: A general purpose sound file conversion tool
 Name: sox
 Version: 14.4.1
-Release: 4%{?dist}
-License: GPLv2+ and LGPLv2+
+Release: 6%{?dist}
+License: GPLv2+ and LGPLv2+ and MIT
 Group: Applications/Multimedia
 #Modified source tarball with libgsm license, without unlicensed liblpc10
 #Source: http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
@@ -75,6 +75,12 @@ rm -f $RPM_BUILD_ROOT/%{_libdir}/sox/*.a
 
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 14.4.1-6
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 14.4.1-5
+- Mass rebuild 2013-12-27
+
 * Thu Jul 25 2013 Frantisek Kluknavsky <fkluknav@redhat.com> - 14.4.1-4
 - removed liblpc10 from source tarball due to licensing uncertainity
 - added license file to libgsm
